@@ -271,7 +271,7 @@
     </script>
     <script>
         const cardsSection = document.getElementById("cards")
-        let load_cards = () => {
+        const load_cards = () => {
             fetch("https://cards.free.beeceptor.com", {method: 'GET', redirect: 'follow'})
             .then(response => response.json())
             .then(result => {
